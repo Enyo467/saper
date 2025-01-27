@@ -64,14 +64,6 @@ int main(int argc, char *argv[])
                             strncpy(plansza_wla[i][j], &linie[j*3], 3);
                         }
                     }
-                for(int i = 0; i < dlugosc; i++)
-                    {
-                        for(int j = 0; j < szerokosc; j++)
-                        {
-                            printf("%s", plansza_wla[i][j]);
-                        }
-                        printf("\n");
-                    } //test
                 int powodzenie = 0;
                 while(fscanf(plansza," %c %d %d", &opcja, &a, &b) == 3)
                 {
@@ -79,7 +71,6 @@ int main(int argc, char *argv[])
                     a-=1;
                     b-=1;
                     c = odkrywanie_planszy(plansza_wla, plansza_wys, opcja, a, b, odwiedzona, dlugosc, szerokosc);
-                    printf("Ruch: %c %d %d, Wynik %d\n", opcja, a+1, b+1, c);
                     if(c != 1)
                     {
                         dobre++;
