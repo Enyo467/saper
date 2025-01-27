@@ -78,7 +78,6 @@ int main(int argc, char *argv[])
                     
                     a-=1;
                     b-=1;
-                    wypisanie_planszy(plansza_wys, dlugosc, szerokosc);
                     c = odkrywanie_planszy(plansza_wla, plansza_wys, opcja, a, b, odwiedzona, dlugosc, szerokosc);
                     printf("Ruch: %c %d %d, Wynik %d\n", opcja, a+1, b+1, c);
                     if(c != 1)
